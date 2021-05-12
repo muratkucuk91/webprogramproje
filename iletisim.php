@@ -190,6 +190,7 @@
 </div>
   
   <button type="submit" class=" m-3 btn btn-primary">Gönder</button>
+  <button type="reset" class=" m-3 btn btn-succes">Temizle</button>
 </form>
 
 
