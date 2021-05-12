@@ -201,6 +201,36 @@
   </div>
   </footer>
 
+  <!-- Veritabana eklemek için PHP  Kodları  -->
+  <?php 
+
+  include("baglanti.php"); //VERİTABANI BAĞLANTI DOSYASI
+  
+  if(isset($_POST["isim"],$_POST["soyadi"],$_POST["mail"],$_POST["sehir"],$_POST["mesaj"],$_POST["cinsiyet"],$_POST["puan"]))
+  {
+  $ad=$_POST["isim"];
+  $soyad=$_POST["soyadi"];
+  $email=$_POST["mail"];
+  $sehir=$_POST["sehir"];
+  $mesaj=$_POST["mesaj"];
+  $cinsiyet=$_POST["cinsiyet"];
+  $puan=$_POST["puan"];
+  
+  $ekle="INSERT INTO kisiselwebsitem (id, ad,soyad, email, sehir, mesaj,cinsiyet,puan) VALUES ('".$id."','".$ad."','".$soyad."','".$email."','".$sehir."','".$mesaj."','".$cinsiyet."','".$puan."')";
+  
+  if($baglan->query($ekle)===TRUE)
+  
+  {
+  
+    echo "<script> alert('Mesajınız Başarı ile Gönderilmiştir.')</script>";
+  }
+  else{
+  
+    echo "<script> alert('Mesajınız gönderilirken bir hata oluştu')</script>";
+  
+  }
+  }
+  ?>
 
   <!-- Değerlendirme puanı için Javascript Kodu  -->
   <script>
