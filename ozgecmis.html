@@ -34,7 +34,7 @@
                 <a class="nav-link" href="Memleketim.html">Memleketim</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Takımm">Galeri</a>
+                <a class="nav-link" href="ilgi.php">Kitaplarım</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="iletisim.php">İletişim</a>
@@ -47,7 +47,20 @@
       </nav>
 <!--Menü bitiş--> 
 
+<div class=" p-5 mb-auto text-center hakkimizda"> 
+  
+  <div class="container">
 
+    <h3 class="mb-5 font-weight-bold">Hakkımda</h3>
+    <hr class="ayrac"><i class="fab fa-pagelines ibeyaz"></i><br/>
+      <i class="fas fa-download " id="download"> Cv İndir</i>
+     
+      
+      </div>
+
+</div>
+
+ 
 <div id="cv" class="resume_wrapper hakkimizda">
   <div class="resume_left">
     <div class="resume_image">
@@ -251,4 +264,28 @@
 
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+
+<script>
+window.onload=function()
+{
+
+  document.getElementById("download")
+  .addEventListener("click",()=>{
+    const cv=this.document.getElementById("cv");
+    console.log(cv);
+    console.log(window);
+    var opt = {
+                margin: -10,
+                filename: 'myfile.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 1 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+    
+    html2pdf().from(cv).set(opt).save();
+  })
+}
+</script>
 </html>
