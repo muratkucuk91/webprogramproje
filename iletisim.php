@@ -56,7 +56,7 @@
 
   </div>
 </section>
-<form action="iletisim.html" class="col-md-6 m-auto" method="post">
+<form action="iletisim.html" class="col-md-6 m-auto" method="post"  name="form-user"  onsubmit="return USERFORM()">
   <div class="m-3  ">
       <label for="name" class="form-label">Ad</label>
       <input type="text" name="isim" class="form-control" id="name" >
@@ -241,5 +241,41 @@
     </script>
     
     
+    <script>
+
+
+<script>
+    function USERFORM() {
+        var isim = document.forms["form-user"]["isim"];
+        var mail = document.forms["form-user"]["mail"];
+        var soyadi = document.forms["form-user"]["soyadi"];
+       
+  
+        if (isim.value == "") {
+            window.alert("Lütfen adınızı boş bırakmayınız.");
+            isim.focus();
+            return false;
+        }
+  
+        if (soyadi.value == "") {
+            window.alert("Lütfen soyadınızı boş bırakmayınız.");
+            soyadi.focus();
+            return false;
+        }
+  
+        if (mail.value == "") {
+            window.alert(
+              "Lütfen geçerli email adresinizi yazınız.");
+            mail.focus();
+            return false;
+        }
+  
+       
+  
+        return true;
+    }
+</script>
+
+
 </body>
 </html>
