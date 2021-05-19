@@ -3,11 +3,6 @@ include 'simple_html_dom.php';
 
 $html= file_get_html('http://www.okuryatar.com/category/edebiyat/');
 
-
-
-
-
-
 ?>
 
 
@@ -82,42 +77,40 @@ $html= file_get_html('http://www.okuryatar.com/category/edebiyat/');
 
 <div class="table-content">
 
-<table class="table ">
-  <thead>
-    <tr>
-      <th scope="col">Resim</th>
-      <th scope="col">Kitap ve Yazar</th>
-      <th scope="col">Hakkında</th>
+  <table class="table ">
+    <thead>
+      <tr>
+         <th scope="col">Resim</th>
+         <th scope="col">Kitap ve Yazar</th>
+         <th scope="col">Hakkında</th>
   
-    </tr>
-  </thead>
+      </tr>
+   </thead>
   <tbody>
-
-
- <?php foreach($html->find('div[class="post-block archive"] div ') as $ret): ?>
-
-
-    <tr>
-    <?php foreach($ret->find('img ') as $div): ?>
+    <?php foreach($html->find('div[class="post-block archive"] div ') as $ret): ?>
+       <tr>
+      <!-- img elementleri çekmek için Resim  -->
+     <?php foreach($ret->find('img ') as $div): ?>
       <th scope="row">
-      <img src="<?php echo       $div->src; ?>">
-      <?php endforeach ?>
-      </th>
-   
-    
-    <?php foreach($ret->find('h2 ') as $div): ?>
-  <td>   <?php echo       $div->innertext; ?>  </td>
-  <?php endforeach ?>
+          <img src="<?php echo       $div->src; ?>">
+     <?php endforeach ?>
+      </th> 
+      <!-- h2 elementleri çekmek için Kitap adı ve Yazar--> 
+     <?php foreach($ret->find('h2 ') as $div): ?>
+     <td>   <?php echo       $div->innertext; ?>  </td>
+     <?php endforeach ?>
 
-
-  <?php foreach($ret->find('p ') as $div): ?>
-  <td>   <?php echo       $div->innertext; ?>  </td>
-  <?php endforeach ?>
+      <!-- p elementleri çekmek için Hakkında-->
+     <?php foreach($ret->find('p ') as $div): ?>
+     <td>   <?php echo       $div->innertext; ?>  </td>
+     <?php endforeach ?>
 
 
    <?php endforeach ?>
   </tbody>
 </table>
+
+
 </div>
 </div>
 <div class=" text-light text-center bg1">
