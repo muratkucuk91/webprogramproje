@@ -40,19 +40,19 @@ $html= file_get_html('http://www.okuryatar.com/category/edebiyat/');
           <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link "  href="index.php"target="_blank">Anasayfa</a>
+                <a class="nav-link "  href="index.php">Anasayfa</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="ozgecmis.php"target="_blank">Özgeçmişim</a>
+                <a class="nav-link" href="ozgecmis.php">Özgeçmişim</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Memleketim.php"target="_blank">Memleketim</a>
+                <a class="nav-link" href="Memleketim.php">Memleketim</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="ilgi.php"target="_blank">Kitaplarım</a>
+                <a class="nav-link" href="ilgi.php">Kitaplarım</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="iletisim.php"target="_blank">İletişim</a>
+                <a class="nav-link" href="iletisim.php">İletişim</a>
               </li>
              
             </ul>

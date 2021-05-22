@@ -219,7 +219,7 @@
   
   $ekle="INSERT INTO kisiselwebsitem (id, ad,soyad, email, sehir, mesaj,cinsiyet,puan) VALUES ('".$id."','".$ad."','".$soyad."','".$email."','".$sehir."','".$mesaj."','".$cinsiyet."','".$puan."')";
   
-  if($baglan->query($ekle)===TRUE)
+  if($db->query($ekle)===TRUE)
   
   {
   
