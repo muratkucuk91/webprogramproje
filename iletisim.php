@@ -34,7 +34,7 @@
                 <a class="nav-link" href="Memleketim.html">Memleketim</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Takımm">Galeri</a>
+                <a class="nav-link" href="ilgi.php">Galeri</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="iletisim.html">İletişim</a>
@@ -190,7 +190,7 @@
 </div>
   
   <button type="submit" class=" m-3 btn btn-primary">Gönder</button>
-  <button type="reset" class=" m-3 btn btn-succes">Temizle</button>
+  <button type="reset" class=" m-3 btn btn-success">Temizle</button>
 </form>
 
 

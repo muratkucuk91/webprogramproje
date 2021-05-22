@@ -68,6 +68,23 @@ h1, .h1 {
 .bg1{
     background-color: #000360;
 }
+
+@media screen and (max-width: 424px){
+	body{
+
+		width: 100%;
+	}
+}
+
+
+.hakkimizda{
+
+    background-color:  #fff;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
 .ayrac{
 
   border:none;
@@ -364,5 +381,7 @@ h1, .h1 {
       .resume_wrapper .resume_right .resmue_interests .interests .int_icon{
         font-size: 24px;
       }
+
+      
       
     }

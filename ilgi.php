@@ -33,20 +33,20 @@ $html= file_get_html('http://www.okuryatar.com/category/edebiyat/');
     <!--Menü Giriş-->
     <nav class="navbar navbar-expand-lg navbar-dark bg1">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.php">KucukMurat</a>
+          <a class="navbar-brand" href="index.html">KucukMurat</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link "  href="index.php">Anasayfa</a>
+                <a class="nav-link "  href="index.html">Anasayfa</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="ozgecmis.php">Özgeçmişim</a>
+                <a class="nav-link" href="ozgecmis.html">Özgeçmişim</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Memleketim.php">Memleketim</a>
+                <a class="nav-link" href="Memleketim.html">Memleketim</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="ilgi.php">Kitaplarım</a>
